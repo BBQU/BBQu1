@@ -10,6 +10,7 @@ import com.example.lenovo.bbqu.R;
 
 public class BanActivity extends AppCompatActivity {
    ImageButton imageButton;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
