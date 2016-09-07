@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical">
+
+<ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/myLinerLayout">
+        <ViewFlipper
+            android:id="@+id/flipper"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"></ViewFlipper>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/container1"
+                android:layout_gravity="center_vertical"
+
+                >
+
+
+
+            </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:background="@color/colorMain"
+            android:layout_height="46dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="附近帮客定位中...."
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="100dp"
+                android:id="@+id/textView" />
+
+            <RadioButton
+                style="@style/main_tab"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginTop="-15dp"
+
+                android:drawableTop="@drawable/c"
+                android:id="@+id/radioB"
+
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:background="@color/colorMain"
+            android:layout_height="46dp"
+            android:layout_weight="1">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="大连天气早知道     "
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="100dp"
+                android:id="@+id/textView1" />
+
+            <RadioButton
+                style="@style/main_tab"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginTop="-15dp"
+
+                android:drawableTop="@drawable/c"
+                android:id="@+id/radioC"
+
+                />
+
+
+        </LinearLayout>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnCount="2"
+            android:rowCount="6"
+            android:orientation="vertical"
+
+            android:columnOrderPreserved="true"
+            android:rowOrderPreserved="true"
+            android:useDefaultMargins="false">
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn1"
+                android:background="@drawable/d111"
+                android:layout_row="0"
+                android:layout_column="0"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 快 递 代 取"
+                android:textSize="18dp"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:layout_marginLeft="50dp"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/textView2" />
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn2"
+                android:background="@drawable/d222"
+                android:layout_row="1"
+                android:layout_column="0"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_row="1"
+                android:layout_column="1"
+                android:clickable="true"
+                android:text="     快 递 查 询"
+                android:textSize="18dp"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/textView3" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn3"
+                android:background="@drawable/d333"
+                android:layout_row="2"
+                android:layout_column="0"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+
+                android:layout_row="2"
+                android:layout_column="1"
+                android:text=" 我 的 订 单"
+                android:textSize="18dp"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/textView4" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn4"
+                android:background="@drawable/d444"
+                android:layout_row="3"
+                android:layout_column="0"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+
+                android:layout_row="3"
+                android:layout_column="1"
+                android:text=" 查 询 记 录"
+                android:textSize="18dp"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/textView5" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn5"
+                android:background="@drawable/d555"
+                android:layout_row="4"
+                android:layout_column="0"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+
+                android:layout_row="4"
+                android:layout_column="1"
+                android:text="     计 算     "
+                android:textSize="18dp"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/textView6" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn6"
+                android:background="@drawable/d666"
+                android:layout_row="5"
+                android:layout_column="0"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:clickable="true"
+                android:layout_row="5"
+                android:layout_column="1"
+                android:text=" 禁 寄 物 品"
+                android:textSize="18dp"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/textView7" />
+
+
+        </GridLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"></LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>
+</LinearLayout>

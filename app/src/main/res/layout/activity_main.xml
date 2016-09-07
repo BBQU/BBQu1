@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.MainActivity">
+
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:id="@+id/main_viewPager">
+
+
+    </android.support.v4.view.ViewPager>
+
+    <RadioGroup
+
+        android:gravity="center_vertical"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:id="@+id/main_tab_RadioGroup"
+        android:background="@drawable/a5"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        >
+        <RadioButton
+            style="@style/main_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="首页"
+            android:textColor="@color/selelctercolor"
+            android:checked="true"
+            android:drawableTop="@drawable/selector"
+            android:id="@+id/radio_1"
+            android:layout_gravity="bottom"
+            />
+
+        <RadioButton
+            style="@style/main_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="社区"
+            android:textColor="@color/selelctercolor"
+            android:drawableTop="@drawable/selectorb"
+            android:id="@+id/radio_2"
+            android:layout_gravity="bottom"
+            />
+
+        <RadioButton
+            style="@style/main_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="消息"
+            android:textColor="@color/selelctercolor"
+            android:drawableTop="@drawable/selectorc"
+            android:id="@+id/radio_3"
+            android:layout_gravity="bottom"
+
+            />
+
+        <RadioButton
+            style="@style/main_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我"
+            android:textColor="@color/selelctercolor"
+            android:drawableTop="@drawable/selectord"
+            android:id="@+id/radio_4"
+            android:layout_gravity="bottom"
+
+            />
+
+
+
+    </RadioGroup>
+
+</LinearLayout>
